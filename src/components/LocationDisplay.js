@@ -4,9 +4,7 @@ function LocationDisplay() {
   const location = useLocation()
 
   return (
-    <div>
-      <h2>No match for {location.pathname}</h2>
-    </div>
+    <div data-testid="location-display">Current URL: {location.pathname}</div>
   )
 }
 export default LocationDisplay

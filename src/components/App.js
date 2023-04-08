@@ -32,11 +32,9 @@ function App() {
           <Route path="/about">
             <About />
           </Route>
-          <Route>
-            <LocationDisplay />
-          </Route>
           <Route path="*">{<h2>NotFound</h2>}</Route>
         </Switch>
+        <LocationDisplay />
       </Router>
     </div>
   )
