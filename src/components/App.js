@@ -11,7 +11,7 @@ function About() {
   return <h1>You are on the about page.</h1>;
 }
 function NotFound() {
-  return <h2>Not Found</h2>;
+  return <h2>No match</h2>;
 }
 function App() {
   return (
@@ -35,7 +35,9 @@ function App() {
           <Route path='/about'>
             <About />
           </Route>
-          <Route path='*'>{<NotFound />}</Route>
+          <Route path='*'>
+            <NotFound />
+          </Route>
         </Switch>
         <LocationDisplay />
       </Router>
