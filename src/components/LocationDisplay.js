@@ -1,10 +1,12 @@
-import React from 'react'
-import { useLocation } from 'react-router-dom'
+import React from 'react';
+import { useLocation } from 'react-router-dom';
+
 function LocationDisplay() {
-  const location = useLocation()
+  const location = useLocation();
 
   return (
-    <div data-testid="location-display">Current URL: {location.pathname}</div>
-  )
+    <div data-testid='location-display'>Current URL: {location.pathname}</div>
+  );
 }
-export default LocationDisplay
+
+export default LocationDisplay;
